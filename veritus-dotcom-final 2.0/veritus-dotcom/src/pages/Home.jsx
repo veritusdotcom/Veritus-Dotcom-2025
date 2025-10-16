@@ -153,12 +153,8 @@ const Home = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg group">
-                  Demonstração Gratuita
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="outline" size="lg" className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-4 text-lg">
-                  Falar com Especialista
+                <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg">
+                  Fale Conosco
                 </Button>
               </div>
               
@@ -287,29 +283,6 @@ const Home = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-corporate-gradient text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-heading font-bold">
-              Pronto para Transformar sua Empresa?
-            </h2>
-            <p className="text-body-large opacity-90">
-              Agende uma demonstração gratuita e descubra como podemos automatizar seus processos 
-              e potencializar seus investimentos em apenas 48 horas.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="px-8 py-4 text-lg">
-                Demonstração Gratuita
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
-                Falar com Especialista
-              </Button>
-            </div>
           </div>
         </div>
       </section>

@@ -56,12 +56,11 @@ const Navigation = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg text-foreground">Veritus Dotcom</span>
-              <span className="text-xs text-muted-foreground">Automação + Assessoria Financeira</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8 ml-16">
             {/* Solutions Dropdown */}
             <div className="relative">
               <button
@@ -122,15 +121,6 @@ const Navigation = () => {
             </Link>
 
             <Link
-              to="/sobre"
-              className={`text-foreground hover:text-primary transition-colors ${
-                isActive('/sobre') ? 'text-primary font-medium' : ''
-              }`}
-            >
-              Sobre
-            </Link>
-
-            <Link
               to="/contato"
               className={`text-foreground hover:text-primary transition-colors ${
                 isActive('/contato') ? 'text-primary font-medium' : ''
@@ -138,10 +128,6 @@ const Navigation = () => {
             >
               Contato
             </Link>
-
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Demonstração Gratuita
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -192,27 +178,12 @@ const Navigation = () => {
               </Link>
 
               <Link
-                to="/sobre"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-foreground hover:text-primary transition-colors p-2"
-              >
-                Sobre
-              </Link>
-
-              <Link
                 to="/contato"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-foreground hover:text-primary transition-colors p-2"
               >
                 Contato
               </Link>
-
-              <Button 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Demonstração Gratuita
-              </Button>
             </div>
           </div>
         )}
